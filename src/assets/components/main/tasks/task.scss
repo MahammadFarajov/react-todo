@@ -1,0 +1,76 @@
+.tasks{
+    padding-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .task-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    &-top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .current{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p{
+                color: #4EA8DE;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            h4{
+                background-color: #333333;
+                border-radius: 999px;
+                color: #fff;
+                padding: 2px 8px 2px 8px;
+            }
+        }
+        .completed{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            p{
+                color: #8284FA;
+                font-size: 14px;
+                font-weight: 700;
+            }
+            h4{
+                background-color: #333333;
+                border-radius: 999px;
+                color: #fff;
+                padding: 2px 8px 2px 8px;
+            }
+        }
+    }
+    .todos-empty{
+        border-top: 1px solid #333333;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 244px;
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            img{
+                width: 56px;
+            }
+            p{
+                color: #808080;
+                font-weight: 700;
+                text-align: center;
+                line-height: 22.4px;
+            }
+        }
+    }
+    .todos{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

@@ -1,0 +1,47 @@
+.task{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 21px;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background: #262626;
+    &-check{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #262626;
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        border: 2px solid #4EA8DE;
+        svg{
+            background: none;
+            display: none;
+        }
+    }
+    &-check.completed{
+        background-color: #5E60CE;
+        border: 2px solid #5E60CE;
+        svg{
+            background: none;
+            display: block;
+        }
+    }
+    .text{
+        margin-right: auto;
+        background-color: #262626;
+        color: #F2F2F2;
+        font-size: 14px;
+        line-height: 19.6px;
+        background-color: #262626;
+    }
+    .text.completed{
+        text-decoration: 1px line-through #808080;
+        color: #808080;
+    }
+    .icon, svg{
+        background-color: #262626;
+    }
+}
